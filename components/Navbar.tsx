@@ -51,7 +51,7 @@ export default function Navbar() {
         <div className="glass rounded-2xl px-6 py-4 flex items-center justify-between shadow-lg">
           
           <div className="flex-shrink-0 cursor-pointer flex items-center gap-3" onClick={() => handleScrollTo('home')}>
-            <div className="relative w-8 h-8 rounded-full overflow-hidden border border-[#00f3ff]/50 shadow-[0_0_10px_rgba(0,243,255,0.4)]">
+            <div className="relative w-8 h-8 rounded-full overflow-hidden border border-neonBlue/50 shadow-[0_0_10px_rgba(var(--accent-blue-rgb),0.4)]">
               <Image src="/mypic.png" alt="Harjot" fill className="object-cover" />
             </div>
             <span className="text-xl font-bold font-sans neon-text-blue">HS.</span>

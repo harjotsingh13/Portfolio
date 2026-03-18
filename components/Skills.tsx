@@ -15,7 +15,7 @@ const skillsData = [
       { name: "Python", icon: SiPython, color: "group-hover:text-yellow-400 group-hover:shadow-[0_0_15px_rgba(250,204,21,0.5)] group-hover:border-yellow-500/50" }
     ],
     color: "neon-text-blue",
-    borderColor: "border-[#00f3ff]/30"
+    borderColor: "border-neonBlue/30"
   },
   {
     category: "Frameworks & Libraries",
@@ -29,7 +29,7 @@ const skillsData = [
       { name: "Hugging Face", icon: Brain, color: "group-hover:text-yellow-300 group-hover:border-yellow-400/50" }
     ],
     color: "neon-text-purple",
-    borderColor: "border-[#bc13fe]/30"
+    borderColor: "border-neonPurple/30"
   },
   {
     category: "Tools & Platforms",
@@ -43,7 +43,7 @@ const skillsData = [
       { name: "Excel", icon: FileSpreadsheet, color: "group-hover:text-green-500 group-hover:border-green-500/50" }
     ],
     color: "neon-text-blue",
-    borderColor: "border-[#00f3ff]/30"
+    borderColor: "border-neonBlue/30"
   },
   {
     category: "Soft Skills",
@@ -54,7 +54,7 @@ const skillsData = [
       { name: "Communication", icon: MessageSquare, color: "group-hover:text-pink-400 group-hover:border-pink-400/50" }
     ],
     color: "neon-text-purple",
-    borderColor: "border-[#bc13fe]/30"
+    borderColor: "border-neonPurple/30"
   }
 ];
 

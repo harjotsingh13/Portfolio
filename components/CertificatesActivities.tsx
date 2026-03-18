@@ -31,7 +31,7 @@ export default function CertificatesActivities() {
             viewport={{ once: true, margin: "-100px" }}
           >
             <h2 className="text-4xl font-bold font-sans mb-10 text-[var(--text-primary)] flex items-center gap-4">
-              <Award className="w-10 h-10 text-[#00f3ff]" />
+              <Award className="w-10 h-10 text-neonBlue" />
               Certifications
             </h2>
             <div className="space-y-4">
@@ -45,11 +45,11 @@ export default function CertificatesActivities() {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.02, y: -4 }}
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                    className="glass p-5 rounded-xl flex items-center gap-4 border-l-4 border-l-[#00f3ff] border border-transparent hover:border-[#00f3ff]/30 hover:bg-[var(--bg-surface)] hover:shadow-[0_0_20px_rgba(0,243,255,0.15)] transition-all duration-300 cursor-pointer block"
+                    className="glass p-5 rounded-xl flex items-center gap-4 border-l-4 border-l-neonBlue border border-transparent hover:border-neonBlue/30 hover:bg-[var(--bg-surface)] hover:shadow-[0_0_20px_rgba(var(--accent-blue-rgb),0.15)] transition-all duration-300 cursor-pointer block"
                   >
                     <div className="flex items-center gap-4 w-full">
                       <div className="flex-shrink-0 p-2 bg-[var(--bg-surface)] rounded-lg">
-                        <Icon className="w-5 h-5 text-[#00f3ff]" />
+                        <Icon className="w-5 h-5 text-neonBlue" />
                       </div>
                       <div className="flex-1 flex items-center justify-between">
                         <span className={`text-lg font-semibold ${cert.color}`}>{cert.title}</span>
@@ -71,7 +71,7 @@ export default function CertificatesActivities() {
             viewport={{ once: true, margin: "-100px" }}
           >
             <h2 className="text-4xl font-bold font-sans mb-10 text-[var(--text-primary)] flex items-center gap-4">
-              <Zap className="w-10 h-10 text-[#bc13fe]" />
+              <Zap className="w-10 h-10 text-neonPurple" />
               Activities
             </h2>
             <div className="space-y-6">
@@ -85,10 +85,10 @@ export default function CertificatesActivities() {
                     whileHover={{ y: -4 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className="glass p-6 rounded-2xl border border-glassBorder hover:border-[#bc13fe]/30 hover:shadow-[0_0_20px_rgba(188,19,254,0.15)] shadow-lg transition-all duration-300 flex items-center gap-4"
+                    className="glass p-6 rounded-2xl border border-glassBorder hover:border-neonPurple/30 hover:shadow-[0_0_20px_rgba(var(--accent-purple-rgb),0.15)] shadow-lg transition-all duration-300 flex items-center gap-4"
                   >
-                    <div className="flex-shrink-0 p-2.5 bg-[#bc13fe]/10 rounded-xl">
-                      <Icon className="w-6 h-6 text-[#bc13fe]" />
+                    <div className="flex-shrink-0 p-2.5 bg-neonPurple/10 rounded-xl">
+                      <Icon className="w-6 h-6 text-neonPurple" />
                     </div>
                     <p className="text-[var(--text-secondary)] text-lg leading-relaxed">{activity.text}</p>
                   </motion.div>

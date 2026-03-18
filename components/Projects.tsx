@@ -14,7 +14,7 @@ const projects = [
     ],
     tags: ["Machine Learning", "Logistic Regression", "Random Forest", "XGBoost", "FastAPI"],
     color: "neon-text-blue",
-    border: "group-hover:border-[#00f3ff]/50",
+    border: "group-hover:border-neonBlue/50",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
     link: "https://churnguard-ai.onrender.com/app",
     github: "https://github.com/harjotsingh13/churnguard-ai",
@@ -30,7 +30,7 @@ const projects = [
     ],
     tags: ["Data Analytics", "Power BI", "DAX", "Power Query"],
     color: "neon-text-purple",
-    border: "group-hover:border-[#bc13fe]/50",
+    border: "group-hover:border-neonPurple/50",
     image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1000&auto=format&fit=crop",
     link: "https://drive.google.com/drive/folders/1kksKYFkwr7XwXO5fykdXlZDddtFbk3F2",
     github: "",
@@ -46,7 +46,7 @@ const projects = [
     ],
     tags: ["NLP", "Transformers", "Sentiment Analysis", "Hinglish"],
     color: "neon-text-blue",
-    border: "group-hover:border-[#00f3ff]/50",
+    border: "group-hover:border-neonBlue/50",
     image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1000&auto=format&fit=crop",
     link: "",
     github: "https://github.com/harjotsingh13/Youtube_Comments_Sent_Ananlysis/tree/main",
@@ -121,7 +121,7 @@ export default function Projects() {
                  <ul className="text-[var(--text-on-surface-muted)] text-sm leading-relaxed mb-6 space-y-3 flex-grow drop-shadow-sm group-hover:opacity-0 transition-opacity duration-300">
                    {project.description.map((point, i) => (
                      <li key={i} className="flex items-start">
-                       <span className="mr-3 text-[#00f3ff] mt-0.5 font-bold text-lg leading-none">•</span>
+                       <span className="mr-3 text-neonBlue mt-0.5 font-bold text-lg leading-none">•</span>
                        <span>{point}</span>
                      </li>
                    ))}
@@ -152,7 +152,7 @@ export default function Projects() {
                        href={project.link}
                        target="_blank"
                        rel="noopener noreferrer"
-                       className="flex items-center justify-center flex-1 gap-2 px-4 py-3 bg-[#00f3ff]/20 text-[#00f3ff] font-semibold text-sm rounded-full border border-[#00f3ff]/40 hover:bg-[#00f3ff]/30 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,243,255,0.4)] transition-all duration-300 backdrop-blur-md"
+                       className="flex items-center justify-center flex-1 gap-2 px-4 py-3 bg-neonBlue/20 text-neonBlue font-semibold text-sm rounded-full border border-neonBlue/40 hover:bg-neonBlue/30 hover:scale-105 hover:shadow-[0_0_20px_rgba(var(--accent-blue-rgb),0.4)] transition-all duration-300 backdrop-blur-md"
                      >
                        <Eye className="w-4 h-4" />
                        {project.title === 'Aviation Analytics' ? 'Docs' : 'Demo'}
@@ -163,7 +163,7 @@ export default function Projects() {
                        href={project.github}
                        target="_blank"
                        rel="noopener noreferrer"
-                       className="flex items-center justify-center flex-1 gap-2 px-4 py-3 bg-[var(--bg-subtle)] text-[var(--text-on-surface)] font-semibold text-sm rounded-full border border-[var(--border-subtle)] hover:bg-[var(--bg-subtle-hover)] hover:scale-105 hover:shadow-[0_0_20px_rgba(0,243,255,0.2)] transition-all duration-300 backdrop-blur-md"
+                       className="flex items-center justify-center flex-1 gap-2 px-4 py-3 bg-[var(--bg-subtle)] text-[var(--text-on-surface)] font-semibold text-sm rounded-full border border-[var(--border-subtle)] hover:bg-[var(--bg-subtle-hover)] hover:scale-105 hover:shadow-[0_0_20px_rgba(var(--accent-blue-rgb),0.2)] transition-all duration-300 backdrop-blur-md"
                      >
                        <Github className="w-4 h-4" />
                        Code

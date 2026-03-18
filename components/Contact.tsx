@@ -23,9 +23,9 @@ export default function Contact() {
             Always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
           </p>
 
-          <div className="glass border border-[#00f3ff]/30 p-10 rounded-3xl shadow-[0_0_50px_rgba(0,243,255,0.1)] relative overflow-hidden group">
+          <div className="glass border border-neonBlue/30 p-10 rounded-3xl shadow-[0_0_50px_rgba(var(--accent-blue-rgb),0.1)] relative overflow-hidden group">
             {/* Glowing orb behind card */}
-            <div className="absolute -top-20 -left-20 w-64 h-64 bg-[#bc13fe] blur-[100px] opacity-20 group-hover:opacity-40 transition-opacity duration-700 pointer-events-none"></div>
+            <div className="absolute -top-20 -left-20 w-64 h-64 bg-neonPurple blur-[100px] opacity-20 group-hover:opacity-40 transition-opacity duration-700 pointer-events-none"></div>
             
             <div className="flex flex-col md:flex-row items-center gap-12 relative z-10">
               {/* Left: Avatar */}
@@ -36,7 +36,7 @@ export default function Contact() {
                 viewport={{ once: true }}
                 className="flex-shrink-0"
               >
-                <div className="w-48 h-48 relative rounded-full overflow-hidden p-2 glass border border-[#bc13fe]/50 shadow-[0_0_30px_rgba(188,19,254,0.4)] group-hover:scale-[1.03] transition-transform duration-500">
+                <div className="w-48 h-48 relative rounded-full overflow-hidden p-2 glass border border-neonPurple/50 shadow-[0_0_30px_rgba(var(--accent-purple-rgb),0.4)] group-hover:scale-[1.03] transition-transform duration-500">
                   <div className="w-full h-full relative rounded-full overflow-hidden bg-[var(--bg-primary)]">
                     <Image src="/mypic.png" alt="Harjot Contact" fill className="object-cover object-top rounded-full" />
                   </div>
@@ -51,23 +51,23 @@ export default function Contact() {
                 viewport={{ once: true }}
                 className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full"
               >
-                <a href="mailto:singhharjot192004@gmail.com" className="flex flex-col items-center justify-center p-6 bg-[var(--bg-card)] border border-[var(--glass-border)] rounded-2xl hover:bg-[var(--bg-surface)] hover:border-[#00f3ff]/50 transition-all duration-300 group/link">
-                  <Mail className="w-8 h-8 text-[var(--text-secondary)] group-hover/link:text-[#00f3ff] mb-3" />
+                <a href="mailto:singhharjot192004@gmail.com" className="flex flex-col items-center justify-center p-6 bg-[var(--bg-card)] border border-[var(--glass-border)] rounded-2xl hover:bg-[var(--bg-surface)] hover:border-neonBlue/50 transition-all duration-300 group/link">
+                  <Mail className="w-8 h-8 text-[var(--text-secondary)] group-hover/link:text-neonBlue mb-3" />
                   <span className="text-[var(--text-secondary)] font-medium">Email Me</span>
                 </a>
 
-                <a href="tel:+919161639675" className="flex flex-col items-center justify-center p-6 bg-[var(--bg-card)] border border-[var(--glass-border)] rounded-2xl hover:bg-[var(--bg-surface)] hover:border-[#bc13fe]/50 transition-all duration-300 group/link">
-                  <Phone className="w-8 h-8 text-[var(--text-secondary)] group-hover/link:text-[#bc13fe] mb-3" />
+                <a href="tel:+919161639675" className="flex flex-col items-center justify-center p-6 bg-[var(--bg-card)] border border-[var(--glass-border)] rounded-2xl hover:bg-[var(--bg-surface)] hover:border-neonPurple/50 transition-all duration-300 group/link">
+                  <Phone className="w-8 h-8 text-[var(--text-secondary)] group-hover/link:text-neonPurple mb-3" />
                   <span className="text-[var(--text-secondary)] font-medium">Call Me</span>
                 </a>
 
-                <a href="https://www.linkedin.com/in/harjot19/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-6 bg-[var(--bg-card)] border border-[var(--glass-border)] rounded-2xl hover:bg-[var(--bg-surface)] hover:border-[#00f3ff]/50 transition-all duration-300 group/link">
-                  <Linkedin className="w-8 h-8 text-[var(--text-secondary)] group-hover/link:text-[#00f3ff] mb-3" />
+                <a href="https://www.linkedin.com/in/harjot19/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-6 bg-[var(--bg-card)] border border-[var(--glass-border)] rounded-2xl hover:bg-[var(--bg-surface)] hover:border-neonBlue/50 transition-all duration-300 group/link">
+                  <Linkedin className="w-8 h-8 text-[var(--text-secondary)] group-hover/link:text-neonBlue mb-3" />
                   <span className="text-[var(--text-secondary)] font-medium">LinkedIn</span>
                 </a>
 
-                <a href="https://github.com/harjotsingh13" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-6 bg-[var(--bg-card)] border border-[var(--glass-border)] rounded-2xl hover:bg-[var(--bg-surface)] hover:border-[#bc13fe]/50 transition-all duration-300 group/link">
-                  <Github className="w-8 h-8 text-[var(--text-secondary)] group-hover/link:text-[#bc13fe] mb-3" />
+                <a href="https://github.com/harjotsingh13" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-6 bg-[var(--bg-card)] border border-[var(--glass-border)] rounded-2xl hover:bg-[var(--bg-surface)] hover:border-neonPurple/50 transition-all duration-300 group/link">
+                  <Github className="w-8 h-8 text-[var(--text-secondary)] group-hover/link:text-neonPurple mb-3" />
                   <span className="text-[var(--text-secondary)] font-medium">GitHub</span>
                 </a>
               </motion.div>

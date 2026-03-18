@@ -44,14 +44,14 @@ export default function About() {
                   href="/resume.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-block px-8 py-4 bg-[var(--bg-card)] text-[var(--text-primary)] font-bold rounded-full transition-all duration-300 border border-[#00f3ff]/50 shadow-[0_0_15px_rgba(0,243,255,0.2)] hover:shadow-[0_0_30px_rgba(0,243,255,0.6)] hover:scale-105 hover:bg-[var(--bg-surface)] cursor-pointer"
+                  className="inline-block px-8 py-4 bg-[var(--bg-card)] text-[var(--text-primary)] font-bold rounded-full transition-all duration-300 border border-neonBlue/50 shadow-[0_0_15px_rgba(var(--accent-blue-rgb),0.2)] hover:shadow-[0_0_30px_rgba(var(--accent-blue-rgb),0.6)] hover:scale-105 hover:bg-[var(--bg-surface)] cursor-pointer"
                 >
                   View My Resume
                 </a>
               </div>
             </div>
 
-            <div className="flex-shrink-0 relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 glass border border-[#bc13fe]/50 shadow-[0_0_40px_rgba(188,19,254,0.4)] group hover:scale-[1.03] hover:shadow-[0_0_60px_rgba(188,19,254,0.6)] transition-all duration-500">
+            <div className="flex-shrink-0 relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 glass border border-neonPurple/50 shadow-[0_0_40px_rgba(var(--accent-purple-rgb),0.4)] group hover:scale-[1.03] hover:shadow-[0_0_60px_rgba(var(--accent-purple-rgb),0.6)] transition-all duration-500">
               <div className="w-full h-full relative rounded-full overflow-hidden bg-[var(--bg-primary)]">
                 <Image 
                   src="/mypic.png" 
@@ -82,8 +82,8 @@ export default function About() {
       </div>
 
       {/* Decorative Blur Orbs */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#bc13fe] rounded-full mix-blend-multiply filter blur-[150px] opacity-20"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#00f3ff] rounded-full mix-blend-multiply filter blur-[150px] opacity-20"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-neonPurple rounded-full mix-blend-multiply filter blur-[150px] opacity-20"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-neonBlue rounded-full mix-blend-multiply filter blur-[150px] opacity-20"></div>
     </motion.section>
   );
 }

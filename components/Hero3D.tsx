@@ -16,12 +16,13 @@ function Scene({ fogColor }: { fogColor: string }) {
       {/* Cinematic Lighting */}
       <ambientLight intensity={0.2} />
       
-      {/* Cyber-tech Environment / Particles - Reduced density for performance */}
-      <Sparkles count={100} scale={10} size={2} speed={0.4} opacity={0.5} color="#00f3ff" />
-      <Sparkles count={50} scale={12} size={1.5} speed={0.2} opacity={0.3} color="#bc13fe" />
+      {/* Cyber-tech Environment / Particles */}
+      <Sparkles count={80} scale={10} size={2} speed={0.4} opacity={0.6} color="#00f3ff" /> {/* Cyan */}
+      <Sparkles count={60} scale={12} size={1.5} speed={0.3} opacity={0.5} color="#00d1b2" /> {/* Teal Green */}
+      <Sparkles count={40} scale={15} size={2.5} speed={0.2} opacity={0.4} color="#0066ff" /> {/* Deep Blue */}
       
-      {/* Futuristic Floor Grid */}
-      <gridHelper args={[20, 20, "#bc13fe", "#222"]} position={[0, -2, 0]} />
+      {/* Futuristic Floor Grid (Teal Green Center, Deep Blue Lines) */}
+      <gridHelper args={[20, 20, "#00d1b2", "#002255"]} position={[0, -2, 0]} />
       
       <Environment preset="city" />
       <fog attach="fog" args={[fogColor, 2, 10]} />

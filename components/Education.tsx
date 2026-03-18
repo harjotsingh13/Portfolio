@@ -30,7 +30,7 @@ const educationDetails = [
 export default function Education() {
   return (
     <section id="education" className="py-24 bg-[var(--bg-primary)] relative overflow-hidden">
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#00f3ff] rounded-full mix-blend-multiply blur-[150px] opacity-10"></div>
+      <div className="absolute top-1/2 left-0 w-96 h-96 bg-neonBlue rounded-full mix-blend-multiply blur-[150px] opacity-10"></div>
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -44,7 +44,7 @@ export default function Education() {
           </h2>
         </motion.div>
 
-        <div className="relative border-l-2 border-[#bc13fe]/30 ml-4 md:ml-0 md:pl-10 space-y-12">
+        <div className="relative border-l-2 border-neonPurple/30 ml-4 md:ml-0 md:pl-10 space-y-12">
           {educationDetails.map((item, index) => (
             <motion.div
               key={index}
@@ -55,7 +55,7 @@ export default function Education() {
               className="relative"
             >
               {/* Timeline dot */}
-              <div className="absolute -left-[45px] top-4 w-6 h-6 rounded-full bg-[#bc13fe] border-4 border-[var(--bg-primary)] shadow-[0_0_15px_#bc13fe] hidden md:block"></div>
+              <div className="absolute -left-[45px] top-4 w-6 h-6 rounded-full bg-neonPurple border-4 border-[var(--bg-primary)] shadow-[0_0_15px_rgba(var(--accent-purple-rgb),1)] hidden md:block"></div>
               
               <div className="glass p-8 rounded-2xl border border-glassBorder hover:shadow-[0_0_20px_rgba(188,19,254,0.15)] transition-shadow">
                 <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
@@ -65,7 +65,7 @@ export default function Education() {
                   <div>
                     <h3 className={`text-2xl font-bold mb-2 ${item.color}`}>{item.institution}</h3>
                     <p className="text-lg text-[var(--text-secondary)] font-medium">{item.degree}</p>
-                    <p className="text-[#00f3ff] font-semibold mt-2 text-sm tracking-widest uppercase">
+                    <p className="text-neonBlue font-semibold mt-2 text-sm tracking-widest uppercase">
                       Score/CGPA: {item.score}
                     </p>
                   </div>
