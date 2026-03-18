@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Dark Theme (Default) ── */
+:root {
+  --bg-primary: #050505;
+  --bg-surface: rgba(255, 255, 255, 0.05);
+  --bg-card: rgba(0, 0, 0, 0.5);
+  --bg-card-hover: rgba(0, 0, 0, 0.6);
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --text-muted: #9ca3af;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --scrollbar-track: #050505;
+  --scrollbar-thumb: rgba(188, 19, 254, 0.3);
+  --scrollbar-thumb-hover: rgba(0, 243, 255, 0.5);
+  --dot-grid: rgba(255, 255, 255, 0.05);
+  --fog-color: #050505;
+  --hero-image-bg: rgba(0, 0, 0, 0.3);
+  --gradient-overlay-from: #050505;
+  --gradient-overlay-via: rgba(5, 5, 5, 0.95);
+  --gradient-overlay-to: rgba(5, 5, 5, 0.2);
+  --gradient-overlay-via-hover: rgba(5, 5, 5, 0.8);
+  --gradient-overlay-to-hover: rgba(5, 5, 5, 0.5);
+  --selection-bg: rgba(188, 19, 254, 0.3);
+  /* ── Theme-aware content colors ── */
+  --text-on-surface: #ffffff;
+  --text-on-surface-muted: #d1d5db;
+  --text-on-surface-faint: #6b7280;
+  --icon-color: #ffffff;
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --bg-section-alt: #050505;
+  --bg-subtle: rgba(255, 255, 255, 0.05);
+  --bg-subtle-hover: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Light Theme ── */
+.light {
+  --bg-primary: #e6f0ff;
+  --bg-surface: rgba(0, 100, 255, 0.04);
+  --bg-card: rgba(255, 255, 255, 0.7);
+  --bg-card-hover: rgba(255, 255, 255, 0.9);
+  --text-primary: #0a192f;
+  --text-secondary: #1e3a8a;
+  --text-muted: #475569;
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(0, 150, 255, 0.15);
+  --scrollbar-track: #e6f0ff;
+  --scrollbar-thumb: rgba(0, 150, 255, 0.4);
+  --scrollbar-thumb-hover: rgba(0, 150, 255, 0.6);
+  --dot-grid: rgba(0, 100, 255, 0.08);
+  --fog-color: #e6f0ff;
+  --hero-image-bg: rgba(255, 255, 255, 0.4);
+  --gradient-overlay-from: #e6f0ff;
+  --gradient-overlay-via: rgba(230, 240, 255, 0.95);
+  --gradient-overlay-to: rgba(230, 240, 255, 0.2);
+  --gradient-overlay-via-hover: rgba(230, 240, 255, 0.8);
+  --gradient-overlay-to-hover: rgba(230, 240, 255, 0.5);
+  --selection-bg: rgba(0, 150, 255, 0.3);
+  /* ── Theme-aware content colors ── */
+  --text-on-surface: #0a192f;
+  --text-on-surface-muted: #334155;
+  --text-on-surface-faint: #64748b;
+  --icon-color: #1d4ed8;
+  --border-subtle: rgba(0, 100, 255, 0.15);
+  --bg-section-alt: #dbeafe;
+  --bg-subtle: rgba(255, 255, 255, 0.5);
+  --bg-subtle-hover: rgba(255, 255, 255, 0.8);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  background-image: radial-gradient(var(--dot-grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  overflow-x: hidden;
+  will-change: transform;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 5px;
+  border: 2px solid var(--scrollbar-track);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .glass {
+    @apply backdrop-blur-md;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    transition: background 0.4s ease, border-color 0.4s ease;
+  }
+  .neon-text-blue {
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.5), 0 0 20px rgba(0, 243, 255, 0.3);
+  }
+  .neon-text-purple {
+    text-shadow: 0 0 10px rgba(188, 19, 254, 0.5), 0 0 20px rgba(188, 19, 254, 0.3);
+  }
+}
+
+/* Project Card Gradient Glow Border on Hover */
+@keyframes borderGlow {
+  0%, 100% {
+    border-color: rgba(0, 243, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.1), 0 8px 32px rgba(0, 0, 0, 0.4);
+  }
+  50% {
+    border-color: rgba(0, 150, 255, 0.5);
+    box-shadow: 0 0 25px rgba(0, 150, 255, 0.2), 0 12px 40px rgba(0, 0, 0, 0.5);
+  }
+}
+
+#projects .group:hover {
+  animation: borderGlow 2s ease-in-out infinite;
+}
+
+/* Smooth transitions for theme switching */
+section, div, nav, a, button, span, p, h1, h2, h3, h4 {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
