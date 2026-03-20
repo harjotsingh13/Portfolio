@@ -41,10 +41,10 @@ export default function About() {
               
               <div className="mt-8">
                 <a 
-                  href="/resume.pdf" 
+                  href="https://drive.google.com/file/d/17XxHIqeIO8u3Batomgo7CCBhP8ZjkSLz/view?usp=sharing" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-block px-8 py-4 bg-[var(--bg-card)] text-[var(--text-primary)] font-bold rounded-full transition-all duration-300 border border-neonBlue/50 shadow-[0_0_15px_rgba(var(--accent-blue-rgb),0.2)] hover:shadow-[0_0_30px_rgba(var(--accent-blue-rgb),0.6)] hover:scale-105 hover:bg-[var(--bg-surface)] cursor-pointer"
+                  className="inline-block px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-bold rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.6)] hover:scale-105 cursor-pointer"
                 >
                   View My Resume
                 </a>
@@ -65,18 +65,18 @@ export default function About() {
           </div>
 
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-             <div className="p-6 border border-glassBorder rounded-2xl bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] transition-colors">
+             <motion.div whileHover={{ scale: 1.05 }} className="p-6 border border-glassBorder rounded-2xl bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] hover:shadow-[0_0_20px_rgba(0,209,178,0.2)] transition-all duration-300">
                 <h3 className="text-2xl font-bold text-[var(--text-primary)] mb-2 neon-text-purple">AI & ML</h3>
                 <p className="text-[var(--text-muted)]">Architecting intelligent systems to solve complex problems.</p>
-             </div>
-             <div className="p-6 border border-glassBorder rounded-2xl bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] transition-colors">
+             </motion.div>
+             <motion.div whileHover={{ scale: 1.05 }} className="p-6 border border-glassBorder rounded-2xl bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] hover:shadow-[0_0_20px_rgba(0,243,255,0.2)] transition-all duration-300">
                 <h3 className="text-2xl font-bold text-[var(--text-primary)] mb-2 neon-text-blue">Data Analytics</h3>
                 <p className="text-[var(--text-muted)]">Extracting meaningful patterns from large-scale data points.</p>
-             </div>
-             <div className="p-6 border border-glassBorder rounded-2xl bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] transition-colors">
+             </motion.div>
+             <motion.div whileHover={{ scale: 1.05 }} className="p-6 border border-glassBorder rounded-2xl bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] hover:shadow-[0_0_20px_rgba(0,209,178,0.2)] transition-all duration-300">
                 <h3 className="text-2xl font-bold text-[var(--text-primary)] mb-2 neon-text-purple">Automation</h3>
                 <p className="text-[var(--text-muted)]">Streamlining pipelines and real-world workflows.</p>
-             </div>
+             </motion.div>
           </div>
         </motion.div>
       </div>

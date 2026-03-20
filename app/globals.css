@@ -4,82 +4,82 @@
 
 /* ── Dark Theme (Default) ── */
 :root {
-  --bg-primary: #050505;
-  --bg-surface: rgba(255, 255, 255, 0.05);
-  --bg-card: rgba(0, 0, 0, 0.5);
-  --bg-card-hover: rgba(0, 0, 0, 0.6);
-  --text-primary: #ffffff;
-  --text-secondary: #d1d5db;
-  --text-muted: #9ca3af;
-  --glass-bg: rgba(255, 255, 255, 0.03);
+  --bg-primary: #0a0a0a; /* Deep dark bg */
+  --bg-surface: rgba(255, 255, 255, 0.03);
+  --bg-card: rgba(10, 10, 10, 0.6);
+  --bg-card-hover: rgba(20, 20, 20, 0.8);
+  --text-primary: #f3f4f6; /* Soft White */
+  --text-secondary: #9ca3af; /* Muted Gray */
+  --text-muted: #6b7280;
+  --glass-bg: rgba(255, 255, 255, 0.02);
   --glass-border: rgba(255, 255, 255, 0.08);
-  --scrollbar-track: #050505;
-  --scrollbar-thumb: rgba(188, 19, 254, 0.3);
-  --scrollbar-thumb-hover: rgba(0, 243, 255, 0.5);
-  --dot-grid: rgba(255, 255, 255, 0.05);
-  --fog-color: #050505;
-  --hero-image-bg: rgba(0, 0, 0, 0.3);
-  --gradient-overlay-from: #050505;
-  --gradient-overlay-via: rgba(5, 5, 5, 0.95);
-  --gradient-overlay-to: rgba(5, 5, 5, 0.2);
-  --gradient-overlay-via-hover: rgba(5, 5, 5, 0.8);
-  --gradient-overlay-to-hover: rgba(5, 5, 5, 0.5);
-  --selection-bg: rgba(188, 19, 254, 0.3);
+  --scrollbar-track: #0a0a0a;
+  --scrollbar-thumb: rgba(0, 243, 255, 0.3);
+  --scrollbar-thumb-hover: rgba(0, 243, 255, 0.6);
+  --dot-grid: rgba(255, 255, 255, 0.04);
+  --fog-color: #0a0a0a;
+  --hero-image-bg: rgba(0, 0, 0, 0.4);
+  --gradient-overlay-from: #0a0a0a;
+  --gradient-overlay-via: rgba(10, 10, 10, 0.9);
+  --gradient-overlay-to: rgba(10, 10, 10, 0.4);
+  --gradient-overlay-via-hover: rgba(10, 10, 10, 0.7);
+  --gradient-overlay-to-hover: rgba(10, 10, 10, 0.3);
+  --selection-bg: rgba(0, 243, 255, 0.2);
   /* ── Theme-aware content colors ── */
-  --text-on-surface: #ffffff;
-  --text-on-surface-muted: #d1d5db;
-  --text-on-surface-faint: #6b7280;
-  --icon-color: #ffffff;
+  --text-on-surface: #f3f4f6;
+  --text-on-surface-muted: #9ca3af;
+  --text-on-surface-faint: #4b5563;
+  --icon-color: #e5e7eb;
   --border-subtle: rgba(255, 255, 255, 0.1);
   --bg-section-alt: #050505;
   --bg-subtle: rgba(255, 255, 255, 0.05);
-  --bg-subtle-hover: rgba(255, 255, 255, 0.1);
+  --bg-subtle-hover: rgba(255, 255, 255, 0.08);
 
   /* ── Accent Colors ── */
-  --accent-blue: #00f3ff;
+  --accent-blue: #00f3ff; /* Cyan */
   --accent-blue-rgb: 0, 243, 255;
-  --accent-purple: #00d1b2; /* Teal Green */
+  --accent-purple: #00d1b2; /* Teal */
   --accent-purple-rgb: 0, 209, 178;
 }
 
 /* ── Light Theme ── */
 .light {
-  --bg-primary: #f8fafc; /* Slate 50 */
+  --bg-primary: #fafafa; /* Off-white */
   --bg-surface: #ffffff;
-  --bg-card: rgba(255, 255, 255, 0.8);
+  --bg-card: rgba(255, 255, 255, 0.9);
   --bg-card-hover: rgba(255, 255, 255, 1);
-  --text-primary: #0f172a; /* Slate 900 */
-  --text-secondary: #334155; /* Slate 700 */
-  --text-muted: #475569; /* Slate 600 */
-  --glass-bg: rgba(255, 255, 255, 0.8);
-  --glass-border: rgba(0, 0, 0, 0.05);
-  --scrollbar-track: #f1f5f9;
+  --text-primary: #1f2937; /* Charcoal */
+  --text-secondary: #4b5563; /* Cool Gray */
+  --text-muted: #9ca3af;
+  --glass-bg: rgba(255, 255, 255, 0.9);
+  --glass-border: rgba(0, 0, 0, 0.06);
+  --scrollbar-track: #f3f4f6;
   --scrollbar-thumb: #cbd5e1;
   --scrollbar-thumb-hover: #94a3b8;
-  --dot-grid: rgba(0, 0, 0, 0.04);
-  --fog-color: #f8fafc;
-  --hero-image-bg: rgba(241, 245, 249, 0.5); /* Slate 100 */
+  --dot-grid: rgba(0, 0, 0, 0.06);
+  --fog-color: #fafafa;
+  --hero-image-bg: rgba(243, 244, 246, 0.6);
   --gradient-overlay-from: #ffffff;
   --gradient-overlay-via: rgba(255, 255, 255, 0.95);
-  --gradient-overlay-to: rgba(255, 255, 255, 0.5);
-  --gradient-overlay-via-hover: rgba(255, 255, 255, 0.8);
-  --gradient-overlay-to-hover: rgba(255, 255, 255, 0.4);
-  --selection-bg: rgba(2, 132, 199, 0.2);
+  --gradient-overlay-to: rgba(255, 255, 255, 0.6);
+  --gradient-overlay-via-hover: rgba(255, 255, 255, 0.85);
+  --gradient-overlay-to-hover: rgba(255, 255, 255, 0.5);
+  --selection-bg: rgba(13, 148, 136, 0.2);
   /* ── Theme-aware content colors ── */
-  --text-on-surface: #0f172a;
-  --text-on-surface-muted: #475569;
-  --text-on-surface-faint: #94a3b8;
-  --icon-color: #334155;
-  --border-subtle: rgba(0, 0, 0, 0.06);
+  --text-on-surface: #1f2937;
+  --text-on-surface-muted: #4b5563;
+  --text-on-surface-faint: #6b7280;
+  --icon-color: #374151;
+  --border-subtle: rgba(0, 0, 0, 0.08);
   --bg-section-alt: #ffffff;
-  --bg-subtle: rgba(0, 0, 0, 0.03);
-  --bg-subtle-hover: rgba(0, 0, 0, 0.06);
+  --bg-subtle: rgba(0, 0, 0, 0.04);
+  --bg-subtle-hover: rgba(0, 0, 0, 0.08);
 
-  /* ── Accent Colors (Deep & Legible for Light Mode) ── */
-  --accent-blue: #0284c7; /* Sky 600 */
-  --accent-blue-rgb: 2, 132, 199;
-  --accent-purple: #9333ea; /* Purple 600 */
-  --accent-purple-rgb: 147, 51, 234;
+  /* ── Accent Colors (Teal -> Cyan Soft) ── */
+  --accent-blue: #06b6d4; /* Soft Cyan */
+  --accent-blue-rgb: 6, 182, 212;
+  --accent-purple: #0d9488; /* Soft Teal */
+  --accent-purple-rgb: 13, 148, 136;
 }
 
 html {

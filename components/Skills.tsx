@@ -104,10 +104,10 @@ export default function Skills() {
                   <motion.div
                     key={skill.name}
                     variants={itemVariants}
-                    whileHover={{ scale: 1.05 }}
-                    className={`group flex items-center justify-center gap-2 px-4 py-2.5 bg-[var(--bg-card)] border border-[var(--glass-border)] rounded-full text-[var(--text-secondary)] text-sm font-medium tracking-wide transition-all duration-300 cursor-default ${skill.color}`}
+                    title={skill.name}
+                    className={`group flex items-center justify-center gap-2 px-4 py-2.5 bg-[var(--bg-card)] border border-[var(--glass-border)] rounded-full text-[var(--text-secondary)] text-sm font-medium tracking-wide transition-all duration-300 cursor-default opacity-80 grayscale-[20%] hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(0,209,178,0.4)] hover:border-teal-400/50 ${skill.color}`}
                   >
-                    <skill.icon className="w-5 h-5 transition-colors duration-300" />
+                    <skill.icon className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
                     <span className="transition-colors duration-300">{skill.name}</span>
                   </motion.div>
                 ))}
